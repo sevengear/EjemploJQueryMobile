@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+$.mobile.changePage.defaults.changeHash = false;
+$.mobile.hashListeningEnabled = false;
+$.mobile.pushStateEnabled = false;
+});
+
+
+    </script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>Cabecera</h1>
+    </div>
+    <div data-role="content">
+        <p>Contenido</p>
+        <ul data-role="listview" data-inset="true" data-filter="true">
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Blackberry</a></li>
+            <li><a href="#">HTC</a></li>
+            <li><a href="#">Nokia</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
